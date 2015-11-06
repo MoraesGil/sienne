@@ -1,5 +1,15 @@
 
 $(document).ready(function(){
+  /* ==============================
+  1. Close Nav Menu Mobile
+  ============================== */
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+
+  /* ==============================
+  1. Start Carousel Equipe
+  ============================== */
   $('.equipe').slick({
     dots: true,
     infinite: true,

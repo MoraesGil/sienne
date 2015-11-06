@@ -3,27 +3,49 @@
   font-family: 'century725_cn_btregular';
   src: url('fonts/ufonts.com_century725-cn-bt-webfont.eot');
   src: url('fonts/ufonts.com_century725-cn-bt-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/ufonts.com_century725-cn-bt-webfont.woff2') format('woff2'),
-  url('fonts/ufonts.com_century725-cn-bt-webfont.woff') format('woff'),
-  url('fonts/ufonts.com_century725-cn-bt-webfont.ttf') format('truetype'),
+
   url('fonts/ufonts.com_century725-cn-bt-webfont.svg#century725_cn_btregular') format('svg');
   font-weight: normal;
   font-style: normal;
 
 }
+/*
+url('fonts/ufonts.com_century725-cn-bt-webfont.woff2') format('woff2'),
+url('fonts/ufonts.com_century725-cn-bt-webfont.woff') format('woff'),
+url('fonts/ufonts.com_century725-cn-bt-webfont.ttf') format('truetype'),*/
 
-/*END-----------FONT-----------*/
+/* ==============================
+Geral
+============================== */
 h1, h2, h3{
   color: #9c1006;
 }
 
+h1{
+  font-size: 4em;
+}
 
+/* ==============================
+cores Icones
+============================== */
+.fa-stack{
+  color: #9c1006;
+}
+
+.subtitle{
+  color: #623e14;
+}
+
+/* ==============================
+Main
+============================== */
 html,
 body {
   margin:0;
   padding:0;
   height:100%;
   font-family: 'century725_cn_btregular';
+
 }
 #wrapper {
   min-height:100%;
@@ -43,7 +65,9 @@ footer {
   bottom:0;
   left:0;
 }
-/*-----------Navmenu bar-----------*/
+/* ==============================
+NAV BAR
+============================== */
 body
 {
   padding-top: 70px;
@@ -89,9 +113,10 @@ navbar-brand{
   color: #9c1006;
 }
 
-#socialTopo a{
-  color: #9c1006;
-}
+/* ==============================
+Responsivo configs
+============================== */
+
 @media (min-width: 768px){
   .navbar-nav {
     float: left;
@@ -107,10 +132,13 @@ navbar-brand{
   .navbar-brand {
     margin:0 auto;
   }
-}
-/*END-----------Navmenu bar-----------*/
 
-/*END-----------Slider Team-----------*/
+
+}
+
+/* ==============================
+Slide Equipe
+============================== */
 .equipe{
   width: 100%;
   margin: 20px auto;
@@ -121,10 +149,44 @@ navbar-brand{
   margin-right: 5px;
 }
 
-#equipe .subtitle{
-  color: #623e14;
+
+
+/* ==============================
+Estrutura
+============================== */
+#estrutura{
+  margin-top: 30px;
+  background: url("../images/bg_estrutura.jpg") no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  color: #9c1006;
+  position: relative;
+}
+.est_icons{
+  margin-bottom 10px;
+}
+#coracao{
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
 }
 
-#equipe h3 .subtitle{
-  color: #623e14;
-}
+/* ==============================
+Vertical Offset
+============================== */
+
+.voffset10  { margin-top: 10px; }
+.voffset20 { margin-top: 20px; }
+.voffset30 { margin-top: 30px; }
+.voffset40 { margin-top: 40px; }
+.voffset42 { margin-top: 42px; }
+.voffset50 { margin-top: 50px; }
+.voffset60 { margin-top: 60px; }
+.voffset70 { margin-top: 70px; }
+.voffset80 { margin-top: 80px; }
+.voffset90 { margin-top: 90px; }
+.voffset100 { margin-top: 100px; }
+.voffset150 { margin-top: 150px; }
+.voffset200 { margin-top: 200px; }

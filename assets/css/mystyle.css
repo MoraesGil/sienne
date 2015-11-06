@@ -1,29 +1,130 @@
+/*Begin-----------FONT-----------*/
+@font-face {
+  font-family: 'century725_cn_btregular';
+  src: url('fonts/ufonts.com_century725-cn-bt-webfont.eot');
+  src: url('fonts/ufonts.com_century725-cn-bt-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/ufonts.com_century725-cn-bt-webfont.woff2') format('woff2'),
+  url('fonts/ufonts.com_century725-cn-bt-webfont.woff') format('woff'),
+  url('fonts/ufonts.com_century725-cn-bt-webfont.ttf') format('truetype'),
+  url('fonts/ufonts.com_century725-cn-bt-webfont.svg#century725_cn_btregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/*END-----------FONT-----------*/
+h1, h2, h3{
+  color: #9c1006;
+}
+
+
 html,
 body {
-	margin:0;
-	padding:0;
-	height:100%;
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family: 'century725_cn_btregular';
 }
 #wrapper {
-	min-height:100%;
-	position:relative;
+  min-height:100%;
+  position:relative;
 }
 header {
-	/*background:#ededed;*/
-	padding:10px;
+  background:#ededed;
+  padding:10px;
 }
 #content {
-	padding-bottom:100px; /* Height of the footer element */
+  padding-bottom:100px; /* Height of the footer element */
 }
 footer {
-	background:#ffab62;
-	width:100%;
-	height:100px;
-	position:absolute;
-	bottom:0;
-	left:0;
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 /*-----------Navmenu bar-----------*/
+body
+{
+  padding-top: 70px;
+}
+
+.navbar{
+  background: #fff;
+}
+
 #socialTopo{
-	margin-top: 7px
+  margin-top: 7px
+}
+
+navbar-brand{
+  height: auto;
+  width: 100px;
+}
+.navbar-toggle {
+  margin: 0px;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  border: 0px;
+  /*display: none;*/
+  margin: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0px;
+  color: #9c1006;
+}
+
+.navbar-brand {
+  display: inline-block;
+  width: 194px;
+  height: 88px;
+  background: url("../images/logo_topo.png") no-repeat;
+  background-size: contain;
+}
+
+#minimenu ul >li> a
+{
+  font-size: 1.5em;
+  color: #9c1006;
+}
+
+#socialTopo a{
+  color: #9c1006;
+}
+@media (min-width: 768px){
+  .navbar-nav {
+    float: left;
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 991){
+  .navbar-brand {
+    margin:0 auto;
+  }
+}
+/*END-----------Navmenu bar-----------*/
+
+/*END-----------Slider Team-----------*/
+.equipe{
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+
+}
+.equipe div {
+  margin-right: 5px;
+}
+
+#equipe .subtitle{
+  color: #623e14;
+}
+
+#equipe h3 .subtitle{
+  color: #623e14;
 }

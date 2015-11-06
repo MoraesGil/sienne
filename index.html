@@ -26,35 +26,31 @@
   <![endif]-->
 </head>
 <body>
-  <div id="wrapper" class="container">
+  <div id="wrapper">
     <header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-
+            <a class="navbar-brand" href="#">
+              <!-- <img alt="Brand" src="assets/images/logo-topo.png"> -->
+            </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#minimenu" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <i class="fa fa-bars"></i>
             </button>
-
-
-            <a class="navbar-brand" href="#">
-              oi
-            </a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="minimenu">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Equipe</a></li>
-              <li><a href="#">Estrutura</a></li>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#home-slider">Home</a></li>
+              <li><a href="#equipe">Equipe</a></li>
+              <li><a href="#estrutura">Estrutura</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#contato">Contato</a></li>
+
               <li class="hidden-xs">
                 <div id="socialTopo">
                   <a href="#">
@@ -85,34 +81,103 @@
 
     <div id="content">
       <section id="home-slider">
-        Banner
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item">
+              <img alt="1 slide" src="assets/images/banner/1.jpg" >
+            </div>
+            <div class="item">
+              <img alt="2 slide" src="assets/images/banner/1.jpg" >
+            </div>
+            <div class="item active">
+              <img alt="3 slide" src="assets/images/banner/1.jpg" >
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
       </section>
-      <section id="equipe">
-        <h2>Nossa Equipe</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sapiente incidunt alias odio!</p>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg">
-              <div class="caption" contenteditable="true">
-                <h3>Thumbnail label</h3>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
+      <section id="equipe" class="container text-center ">
+        <h1>Nossa Equipe</h1>
+        <h3 class="subtitle">Preparados para cuidar da sua melhor idade.</h3>
+
+        <div class="equipe">
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/01.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Jéssica</h3>
+                <p class="subtitle">Médica</p>
               </div>
             </div>
           </div>
-        </div>
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/02.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Adriana</h3>
+                <p class="subtitle">Médica</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/03.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Jéssica</h3>
+                <p class="subtitle">Médica</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/04.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Jéssica</h3>
+                <p class="subtitle">Médica</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/05.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Jéssica</h3>
+                <p class="subtitle">Médica</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="thumbnail">
+              <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/01.jpg">
+              <div class="caption" contenteditable="true">
+                <h3>Jéssica</h3>
+                <p class="subtitle">Médica</p>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- end equipe -->
+
+
+
       </section>
-      <section id="estrutura">
+      <section id="estrutura" class="container">
         estrutura
       </section>
-      <section id="servicos">
+      <section id="servicos" class="container">
         servicos
       </section>
-      <section id="galeria">
+      <section id="galeria" class="container">
         galeria rotativa
       </section>
-      <section id="contato">
+      <section id="contato" class="container">
         <form action="" role="form">
           <div class="row">
             <div class="col-md-3">
@@ -157,21 +222,22 @@
       </section>
     </div><!-- #content -->
     <footer>
-      <div>atq logo</div>
-      <div>Copyright © 2015 - SIENNE VILLE. All rights reserved.</div>
+      <div class="container text-center">
+        <a href="http://ataquepropaganda.com.br/"><img src="assets/images/logo_ataque.png" alt=""></a>
+        <div>Copyright © 2015 - SIENNE VILLE. All rights reserved.</div>
+      </div>
+
     </footer>
   </div><!-- Wrap all page content here -->
 
 
-
-
-
-  <!-- jQuery -->
   <script src="assets/js/jquery-1.11.0.min.js"></script>
   <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
   <!-- Bootstrap JavaScript -->
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Your own javascript -->
-  <script src="js/main.js"></script>
+  <script src="assets/slick/slick.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

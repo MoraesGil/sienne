@@ -25,7 +25,7 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body data-spy="scroll">
+<body>
   <div id="wrapper">
     <header>
       <nav class="navbar navbar-fixed-top">
@@ -102,11 +102,11 @@
         </div>
       </section>
 
-      <section id="equipe" class=" text-center ">
+      <section id="equipe" class="container text-center ">
         <h1>Nossa Equipe</h1>
         <h3 class="subtitle">Preparados para cuidar da sua melhor idade.</h3>
 
-        <div class="equipe">
+        <div class="slider" id="slider-equipe">
           <div>
             <div class="thumbnail">
               <img alt="Bootstrap Thumbnail First" src="assets/images/equipe/01.jpg">
@@ -169,11 +169,10 @@
       </section>
 
       <section id="estrutura">
-        <img id="coracao" class="hidden-xs col-md-4" src="assets/images/coracao.png" alt="">
+        <img id="coracao" class="hidden-xs " src="assets/images/coracao.png" alt="">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-4 col-sm-offset-6">
-              <div class="voffset50"></div>
               <h1> Estrutura</h1>
               <h3 class="subtitle"> ótimos alojamentos para lazer e descanço</h3>
 
@@ -222,117 +221,243 @@
         <div class="container">
           <div class="row">
             <!-- Departamentos -->
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
               <h2>Departamentos</h2>
-              <div class="bs-example" data-example-id="collapse-accordion">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                          Collapsible Group Item #1
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
+
+              <div class="panel-group" id="accordion">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                        Nutrição
+                      </a>
+                    </h4>
                   </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Collapsible Group Item #2
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Collapsible Group Item #3
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <div class="media">
+                        <div class="media-body">
+                          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                        Fisioterapia
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="media">
+
+                        <div class="media-body">
+                          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                        Assistente Social
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="media">
+
+                        <div class="media-body">
+                          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                        Cuidado
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="media">
+
+                        <div class="media-body">
+                          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                        Enfermaria
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="media">
+
+                        <div class="media-body">
+                          Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
             </div>
             <!-- Serviços -->
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
               <h2>Serviços</h2>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero consectetur aut mollitia adipisci dolore quia. Eveniet officia nostrum quisquam fugiat saepe, numquam distinctio veritatis? Facilis iste ipsam modi animi, perferendis.
-              <ul>
-                li*3{oi}
+              <ul class="list1">
+                <li>
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li>
+                  Sint animi non ut sed
+                </li>
+                <li>
+                  Eaque blanditiis nemo
+                </li>
+                <li>
+                  Amet, consectetur adipisicing
+                </li>
+                <li>
+                  Blanditiis nemo quaerat
+                </li>
               </ul>
             </div>
             <!-- Vantagens -->
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
               <h2>Vantagens</h2>
+              <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Home</a></li>
+                <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a></li>
+                <li role="presentation" class="dropdown">
+                  <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                    <li><a href="#dropdown1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">@fat</a></li>
+                    <li><a href="#dropdown2" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div id="myTabContent" class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+                  <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </section>
 
-      <section id="galeria" class="container">
-        <h2>Curta nossa fã page e receba novidades da casa</h2><a href="#" class="btn btn-info">Fã Page</a>
-      </section>
+      <section id="galeria" class="">
 
-      <section id="contato" class="container">
-        <form action="" role="form">
-          <div class="row">
-            <div class="col-md-3">
-              <h3>Endereço</h3>
-              <p>R. Felié Rodrigues, Lote 11 Chácara das Palmeiras Álvares Machado SP</p>
-              <p>Fone 18 99988 8888</p>
+        <div class="container">
+          <h2>  Curta nossa fã page e receba novidades da casa <a href="#" class="btnFa pull-right">Fã Page</a></h2>
+        </div>
 
-              <p>contato@sienneville.com.br</p>
 
-            </div>
-            <div class="col-md-9">
-              <form action="" method="POST" class="form-horizontal" role="form">
-                <h3>Contato</h3>
-
-                <div class="form-group col-md-6">
-                  <input type="text" name="con_nome" placeholder="Nome" class="form-control ">
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" name="con_telefone" placeholder="Telefone" class="form-control">
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" name="con_email" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" name="con_assunto" placeholder="Assunto" class="form-control">
-                </div>
-                <div class="form-group col-md-12">
-                  <textarea name="con_msg" rows="8" class="form-control">
-                  </textarea>
-                </div>
-
-                <div class="form-group">
-                  <div class="col-sm-10 col-sm-offset-2">
-                    <button type="submit" class="btn btn-primary pull-right">Enviar</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        <div class="slider" id="slider-galeria">
+          <div>
+            <img src="assets/images/galeria/img1.jpg" alt="">
+          </div>
+          <div>
+            <img src="assets/images/galeria/img2.jpg" alt="">
+          </div>
+          <div>
+            <img src="assets/images/galeria/img3.jpg" alt="">
+          </div>
+          <div>
+            <img src="assets/images/galeria/img4.jpg" alt="">
+          </div>
+          <div>
+            <img src="assets/images/galeria/img5.jpg" alt="">
           </div>
 
-        </form>
+
+        </div> <!-- end galeria -->
+
+      </section>
+
+      <section id="contato" class="">
+        <div class="container">
+          <form action="" role="form">
+            <div class="row">
+              <div class="col-md-3">
+                <h3>Endereço</h3>
+                <p>R. Felié Rodrigues, Lote 11 Chácara das Palmeiras Álvares Machado SP</p>
+                <p>Fone 18 99988 8888</p>
+
+                <p>contato@sienneville.com.br</p>
+
+              </div>
+              <div class="col-md-9">
+                <form action="" method="POST" class="form-horizontal" role="form">
+                  <h3>Contato</h3>
+
+                  <div class="form-group col-md-6">
+                    <input type="text" name="con_nome" placeholder="Nome" class="form-control ">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="con_telefone" placeholder="Telefone" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="con_email" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" name="con_assunto" placeholder="Assunto" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <textarea name="con_msg" rows="8" class="form-control">
+                    </textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                      <button type="submit" class="btnFa pull-right">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
       </section>
     </div><!-- #content -->
     <footer>
@@ -345,8 +470,8 @@
   </div><!-- Wrap all page content here -->
 
 
-  <script src="assets/js/jquery-1.11.0.min.js"></script>
-  <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+  <script src="assets/js/jquery-1.13.0.min.js"></script>
+  <!-- <script src="assets/js/jquery-migrate-1.2.1.min.js"></script> -->
   <!-- Bootstrap JavaScript -->
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Your own javascript -->

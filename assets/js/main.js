@@ -10,7 +10,7 @@ $(document).ready(function(){
   /* ==============================
   1. Start Carousel Equipe
   ============================== */
-  $('.equipe').slick({
+  $('.slider').slick({
     dots: true,
     infinite: true,
     adaptiveHeight: true,
@@ -46,4 +46,13 @@ $(document).ready(function(){
       }
     ]
   });
+
+  /* ==============================
+  1. VantagensMenu
+  ============================== */
+ $('#VantagensMenu > li:first-child').on('shown.bs.tab', function (e) {
+        // save the latest tab; use cookies if you like 'em better:
+        localStorage.setItem('lastTab', $(this).attr('href'));
+    });
+
 });

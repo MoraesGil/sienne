@@ -48,11 +48,28 @@ $(document).ready(function(){
   });
 
   /* ==============================
-  1. VantagensMenu
+  1. Scroll ref http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to
   ============================== */
- $('#VantagensMenu > li:first-child').on('shown.bs.tab', function (e) {
-        // save the latest tab; use cookies if you like 'em better:
-        localStorage.setItem('lastTab', $(this).attr('href'));
+  $('#minimenu > ul > li > a').on('click', function (e) {
+    // e.preventDefault();
+
+    var target = this.hash,
+    $target = $(target);
+
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top-90
+    }, 900, 'swing', function () {
     });
 
-});
+    console.log(window.location);
+
+    return false;
+  });
+
+  /* ==============================
+  GMAPS
+  ============================== */
+
+
+  // ======== //
+});  // ========CLOSE MAIN

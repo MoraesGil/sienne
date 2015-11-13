@@ -169,12 +169,12 @@
       </section>
 
       <section id="estrutura">
-        <img id="coracao" class="hidden-xs " src="assets/images/coracao.png" alt="">
         <div class="container">
           <div class="row">
-            <div class="col-md-8 col-md-offset-4 col-sm-offset-6">
+            <img id="coracao" class="hidden-xs img-responsive col-md-4 col-sm-6" src="assets/images/coracao.png" alt="">
+            <div class="col-md-8 col-sm-6">
               <h1> Estrutura</h1>
-              <h3 class="subtitle"> ótimos alojamentos para lazer e descanço</h3>
+              <h3 class="subtitle"> Ótimos alojamentos para lazer e descanço</h3>
 
               <div class="est_icons col-md-6 col-sm-12 col-xs-12">
                 <span class="fa-stack fa-3x fa-pull-left">
@@ -418,16 +418,31 @@
           <form action="" role="form">
             <div class="row">
               <div class="col-md-3">
-                <h3>Endereço</h3>
-                <p>R. Felié Rodrigues, Lote 11 Chácara das Palmeiras Álvares Machado SP</p>
-                <p>Fone 18 99988 8888</p>
-
-                <p>contato@sienneville.com.br</p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Endereço</h3>
+                    <br>
+                    R. Felié Rodrigues, Lote 11
+                    <br>
+                    Chácara das Palmeiras
+                    <br>
+                    Álvares Machado SP
+                    <br>
+                    Fone 18 99988 8888
+                    <p>contato@sienneville.com.br</p>
+                  </div>
+                  <div class="col-md-12">
+                    <div id="minimap"></div>
+                  </div>
+                </div>
 
               </div>
               <div class="col-md-9">
+
                 <form action="" method="POST" class="form-horizontal" role="form">
-                  <h3>Contato</h3>
+                  <div class="form-group col-md-12">
+                    <h3>Contato</h3>
+                  </div>
 
                   <div class="form-group col-md-6">
                     <input type="text" name="con_nome" placeholder="Nome" class="form-control ">
@@ -469,7 +484,37 @@
     </footer>
   </div><!-- Wrap all page content here -->
 
+  <script>
 
+  function initMap() {
+
+    var local = {lat: -22.1060075, lng: -51.4641155};
+    var map = new google.maps.Map(document.getElementById('minimap'), {
+      center: local,
+      zoom : 17,
+      zoomControl : false,
+      mapTypeControl : false,
+      scaleControl : false,
+      streetViewControl : false,
+      scrollwheel:false,
+      panControl : false
+    });
+    var infowindow = new google.maps.InfoWindow;
+    infowindow.setContent('Sienne Ville');
+
+    var pointerUrl = 'images/pointer.png'
+    var marker = new google.maps.Marker({
+      map: map,
+      position: local
+    });
+
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+  async defer></script>
   <script src="assets/js/jquery-1.13.0.min.js"></script>
   <!-- <script src="assets/js/jquery-migrate-1.2.1.min.js"></script> -->
   <!-- Bootstrap JavaScript -->

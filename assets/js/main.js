@@ -10,16 +10,18 @@ $(document).ready(function(){
   /* ==============================
   1. Start Carousel Equipe
   ============================== */
+
+
   $('.slider').slick({
     dots: true,
     infinite: true,
     adaptiveHeight: true,
     speed: 300,
-    slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1024,
@@ -46,6 +48,44 @@ $(document).ready(function(){
       }
     ]
   });
+
+  $('#slider-galeria').slick({
+    dots: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 300,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
 
   /* ==============================
   1. Scroll ref http://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to

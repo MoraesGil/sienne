@@ -169,10 +169,11 @@ Slide Equipe
   margin-right: 5px;
 }
 
-#slider-galeria div img{
-  max-width: 100%;
-  height: auto;
+#slider-galeria div  {
+  margin-right: 5px;
 }
+
+
 
 .slick-dots li button:before
 {
@@ -189,8 +190,8 @@ Slide Equipe
 Estrutura
 ============================== */
 #estrutura{
-  margin-top: 30px;
-  padding-top: 15px;
+  /*margin-top: 30px;*/
+  padding-top: 50px;
   padding-bottom: 30px;
   background: url("../images/bg_estrutura.jpg") no-repeat;
   color: #9c1006;
@@ -207,12 +208,22 @@ Estrutura
 }
 
 @media (max-width: 991px){
+  #estrutura{
+    padding-top: 10px;
+
+  }
+
   #coracao{
     bottom: 11.2%;
     left: 30%;
   }
 }
+@media (max-width: 767px){
+  #estrutura{
+    text-align: center;
 
+  }
+}
 
 
 
@@ -364,7 +375,7 @@ Servicos
 
   ul.list1 li {
     position: relative;
-    padding: 9px 0 10px 30px;
+    padding: 16px 0 10px 30px;
   }
   ul.list1 li > .media {
     margin: 7px 0 7px;

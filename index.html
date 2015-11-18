@@ -413,6 +413,7 @@
 
       </section>
 
+
       <section id="contato" class="">
         <div class="container">
           <form action="" role="form">
@@ -500,12 +501,14 @@
       panControl : false
     });
     var infowindow = new google.maps.InfoWindow;
-    infowindow.setContent('Sienne Ville');
+    infowindow.setContent('Sienne Ville<br/> <a href="https://www.google.com.br/maps/dir//-22.106,-51.4641111/@-22.1061669,-51.4641111,244m/data=!3m1!1e3!4m5!1m4!3m3!1s0x0:0x0!2zMjLCsDA2JzIxLjYiUyA1McKwMjcnNTAuOCJX!3b1" target="_blank"> Como chegar</a>');
 
-    var pointerUrl = 'images/pointer.png'
+
+    // var pointerUrl = 'images/pointer.png'
     var marker = new google.maps.Marker({
       map: map,
-      position: local
+      position: local,
+      title : 'Clique para mais.'
     });
 
     marker.addListener('click', function() {

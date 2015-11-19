@@ -107,9 +107,11 @@ $(document).ready(function(){
   });
 
   /* ==============================
-  GMAPS
+  prettyPhoto TUTORIAL http://www.teachingmultimedia.com/mmp240/prettyPhoto/#prettyPhoto
   ============================== */
+  $("a[rel^='prettyPhoto']").prettyPhoto({
+    social_tools:'',
+    allow_resize: true
+  });
 
-
-  // ======== //
 });  // ========CLOSE MAIN

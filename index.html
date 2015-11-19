@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
   <!-- Custom CSS -->
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/css/mystyle.css" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -155,6 +156,7 @@
           </div>
         </div>
       </section>
+
       <section id="equipe" class="container text-center ">
         <h1>Nossa Equipe</h1>
         <h3 class="subtitle">Preparados para cuidar da sua melhor idade.</h3>
@@ -220,7 +222,7 @@
 
 
       </section>
-      
+
       <section id="servicos" class="container">
         <div class="container">
           <div class="row">
@@ -394,23 +396,55 @@
         <div id="slider-galeria">
 
           <div class="thumbnail">
-            <img alt="" src="assets/images/galeria/img1.jpg">
+            <a href="assets/images/galeria/1/tumb.jpg" rel="prettyPhoto[galeria1]">
+              <img alt="" src="assets/images/galeria/1/tumb.jpg">
+            </a>
+            <a href="assets/images/galeria/1/tumb.jpg" rel="prettyPhoto[galeria1]"></a>
+            <a href="assets/images/galeria/1/tumb.jpg" rel="prettyPhoto[galeria1]"></a>
+
             <div class="caption"  >
               <h3>Galeria A</h3>
             </div>
           </div>
-          <div class="thumbnail ">
-            <img alt="" src="assets/images/galeria/img2.jpg">
+
+          <div class="thumbnail">
+            <a href="assets/images/galeria/2/tumb.jpg" rel="prettyPhoto[galeria2]">
+              <img alt="" src="assets/images/galeria/2/tumb.jpg">
+            </a>
+            <a href="assets/images/galeria/2/tumb.jpg" rel="prettyPhoto[galeria2]"></a>
+            <a href="assets/images/galeria/2/tumb.jpg" rel="prettyPhoto[galeria2]"></a>
+
             <div class="caption"  >
               <h3>Galeria B</h3>
             </div>
           </div>
-          <div class="thumbnail ">
-            <img alt="" src="assets/images/galeria/img3.jpg">
+
+          <div class="thumbnail">
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]">
+              <img alt="" src="assets/images/galeria/3/tumb.jpg">
+            </a>
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]"></a>
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]"></a>
+
             <div class="caption"  >
               <h3>Galeria C</h3>
             </div>
           </div>
+
+
+          <div class="thumbnail">
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]">
+              <img alt="" src="assets/images/galeria/3/tumb.jpg">
+            </a>
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]"></a>
+            <a href="assets/images/galeria/3/tumb.jpg" rel="prettyPhoto[galeria3]"></a>
+
+            <div class="caption"  >
+              <h3>Galeria D</h3>
+            </div>
+          </div>
+
+
         </div>
 
       </section>
@@ -487,7 +521,6 @@
   </div><!-- Wrap all page content here -->
 
   <script>
-
   function initMap() {
 
     var local = {lat: -22.1060075, lng: -51.4641155};
@@ -521,12 +554,14 @@
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
   async defer></script>
   <script src="assets/js/jquery-1.13.0.min.js"></script>
-  <!-- <script src="assets/js/jquery-migrate-1.2.1.min.js"></script> -->
+
   <!-- Bootstrap JavaScript -->
   <script src="assets/js/bootstrap.min.js"></script>
-  <!-- Your own javascript -->
+
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
   <script src="assets/slick/slick.min.js"></script>
 
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>

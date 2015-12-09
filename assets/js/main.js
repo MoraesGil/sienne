@@ -49,42 +49,6 @@ $(document).ready(function(){
     ]
   });
 
-  $('#slider-galeria').slick({
-    dots: true,
-    infinite: true,
-    adaptiveHeight: true,
-    speed: 300,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
 
 
   /* ==============================
@@ -110,8 +74,28 @@ $(document).ready(function(){
   prettyPhoto TUTORIAL http://www.teachingmultimedia.com/mmp240/prettyPhoto/#prettyPhoto
   ============================== */
   $("a[rel^='prettyPhoto']").prettyPhoto({
-    social_tools:'',
-    allow_resize: true
+    social_tools:''
   });
 
 });  // ========CLOSE MAIN
+
+
+// var app =  angular.module('site',['ngRoute']);
+//
+// app.config(function($routeProvider){
+//   $routeProvider
+//   .when('/home',
+//   {
+//     controller :  '',
+//     templateUrl:'pg/home.html'
+//   })
+//   .when('/locacoes',
+//   {
+//     controller :  '',
+//     templateUrl:'pg/locacoes.html'
+//   }).when('/devolver',
+//   {
+//     controller :  '',
+//     templateUrl:'pg/devolucao.html'
+//   }).otherwise({ redirectTo:'/home'});
+// });

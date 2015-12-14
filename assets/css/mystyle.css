@@ -106,7 +106,7 @@ navbar-brand{
 .navbar-brand {
   display: inline-block;
   width: 194px;
-  height: 88px;
+  height: 99px;
   background: url("../images/logo_topo.png") no-repeat;
   background-size: contain;
   margin-top: 5px;
@@ -155,20 +155,16 @@ Responsivo configs
 /* ==============================
 Slide Equipe
 ============================== */
-.slider{
+slick{
   width: 100%;
   margin: 20px auto;
   text-align: center;
 
 }
-#slider-equipe div  {
+slick div  {
   margin-right: 5px;
 }
-
  
-
-
-
 .slick-dots li button:before
 {
   color: #623e14;
